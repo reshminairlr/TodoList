@@ -11,7 +11,7 @@ body, html {
 
 .bg-image {
   /* The image used */
-  background-image: url("/image/backgnd.jpg");
+  background-image: url("../image/backgnd.jpg");
   
   /* Add the blur effect */
   filter: blur(4px);
@@ -52,21 +52,13 @@ body, html {
   color: white;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-.sticky + .content {
-  padding-top: 60px;
-}
 
 
 
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-image: url("/image/logo.jpg");
+  background-image: url("../image/logo.jpg");
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +94,7 @@ h1 {
 .checkbckgnd{
   
     /* The image used */
-    background-image: url("/image/todolist.jpg");
+    background-image: url("../image/todolist.jpg");
     
     /* Add the blur effect */
     /* filter: blur(4px);
