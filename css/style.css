@@ -27,7 +27,40 @@ body, html {
   
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 50%; 
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:red;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 
 
 
@@ -63,4 +96,28 @@ h1 {
 	text-transform: uppercase;
 	text-shadow: 0 2px white, 0 3px rgb(248, 4, 4);
 }
-
+/* #check_box td{
+  white-space: pre-wrap;
+} */
+.checkbckgnd{
+  
+    /* The image used */
+    background-image: url("/image/todolist.jpg");
+    
+    /* Add the blur effect */
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+    
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    
+  }
+  #check_box{
+    color: white;
+  }
