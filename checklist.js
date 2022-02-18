@@ -10,6 +10,7 @@ var response=JSON.parse(this.responseText);
 // console.log(response[0].title);
 // var checklist="",compltd="";
 console.log("length="+response.length);
+let count=0;
 for(var j=0;j<response.length;j++)
 {
 //     checklist+=response[j].title;
@@ -27,7 +28,7 @@ checkbox.id = "id";
 checkbox.checked="true";
 var label = document.createElement('label')
 label.htmlFor = "id";
-label.id = "labelid";
+
 
 var linebreak = document.createElement("br"); 
 // var space = document.createElement("&nbsp;");
@@ -50,9 +51,10 @@ checkbox.type = "checkbox";
 checkbox.name = "name";
 checkbox.value = "value";
 checkbox.id = "id";
+checkbox.onclick="taskcompleted();"
 var label = document.createElement('label')
 label.htmlFor = "id";
-label.id = "labelid";
+
 var linebreak = document.createElement("br");
 // var space = document.createElement("&nbsp;");
 
@@ -64,9 +66,16 @@ check_box.appendChild(checkbox);
 
 check_box.appendChild(label);
 check_box.appendChild(linebreak);
-}
+count++;
+
 
 }
+
+
+
+
+}
+
 }
 }
 
