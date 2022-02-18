@@ -1,0 +1,51 @@
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+    
+</head>
+<body>
+    <!-- <p>click me i will disappear</p>
+    <p>click me i will dissappear</p>
+    <p>click me i will disappear</p> -->
+
+    <h1>Hide & show  .......</h1>
+<p>hide me ......</p>
+<h2>show me</h2>
+
+<button id="button1">click me to hide</button>
+<button id="button2">click me to show</button>
+
+  <script src="jqueryexmple.js"></script>  
+</body>
+</html>
+
+$(document).ready(function(){
+
+
+
+    // $("p").click(function(){
+    // $(this).hide(function(){
+    //     console.log("hide will worked");
+    //     $(this).show();
+    //     console.log("show will worked");
+    // });
+    // })
+    
+    
+    
+    
+    $("#button1").click(function(){
+    $("p,h2,h1").hide();
+    
+    })
+    
+    $("#button2").click(function(){
+        $("h2,h1").show();
+    })
+    
+    })
+
+
+
