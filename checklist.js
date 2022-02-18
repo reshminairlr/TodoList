@@ -27,6 +27,8 @@ checkbox.id = "id";
 checkbox.checked="true";
 var label = document.createElement('label')
 label.htmlFor = "id";
+label.id = "labelid";
+
 var linebreak = document.createElement("br"); 
 // var space = document.createElement("&nbsp;");
 // label.style.whiteSpace = "pre-wrap";
@@ -50,6 +52,7 @@ checkbox.value = "value";
 checkbox.id = "id";
 var label = document.createElement('label')
 label.htmlFor = "id";
+label.id = "labelid";
 var linebreak = document.createElement("br");
 // var space = document.createElement("&nbsp;");
 
@@ -61,22 +64,7 @@ check_box.appendChild(checkbox);
 
 check_box.appendChild(label);
 check_box.appendChild(linebreak);
-
-
-
-
 }
-
-// else{
-//     label.appendChild(document.createTextNode(checklist));
-
-// }
-// console.log("label"+label);
-// console.log("checkbox"+checkbox);
-
-
-
-
 
 }
 }
@@ -86,3 +74,4 @@ xhttp.open("GET","https://jsonplaceholder.typicode.com/todos",true);
 xhttp.send();
 
 }
+
