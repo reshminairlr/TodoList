@@ -23,17 +23,7 @@
     <div class="row ">
         <div class="col-sm-1"></div>
         <div class="col-sm-8" >
-    <!-- <table name="checkedlist" id="checkedlist" >
-        <tr>
-          
-            <td id="check_box" onclick=" taskcompleted();" ></td>
-           
-
-        </tr>
-
-
-
-    </table> -->
+ 
     <ul onclick=" taskcompleted();">
 <li id="check_box"  >
 
@@ -53,26 +43,21 @@
 <script>
 
 
-
-
-
        
         function taskcompleted(){
             let tc=0,td=0;
-            // for(var i=0;i<5;i++){
+           
 
-        //   document.getElementById("taskdtls").textContent = "Total Number of Task Selected = " + document.querySelectorAll("input:checked").length;
-        // tc=console.log( document.querySelectorAll("#id:checked").length);
+     
 if( document.querySelectorAll("#id:checked").length=="95")
 {
         
-        console.log("tc as 5");
+        // console.log("tc as 5");
         tc++;
 
         showChecked(tc);
         function showChecked(){
           document.getElementById("taskdtls").textContent = "Congrats you  completed the 5 tasks! " ;
-        // console.log(document.querySelectorAll("input:checked").length);
         }
         document.querySelectorAll("input[name=name]").forEach(i=>{
          i.onclick = function(){
@@ -112,10 +97,10 @@ if( document.querySelectorAll("#id:checked").length=="95")
         console.log(err);
     })
 
-// }
+
 }
 }       
-// // })
+
       
    
 
