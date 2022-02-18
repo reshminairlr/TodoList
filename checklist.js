@@ -26,9 +26,13 @@ checkbox.name = "name";
 // checkbox.value = "value";
 checkbox.id = "id";
 checkbox.checked="true";
- checkbox.class="disabled";
+checkbox.disabled="true";
+checkbox.onfocus=blur()
 var label = document.createElement('label');
 label.htmlFor = "id";
+
+
+
 
 
 var linebreak = document.createElement("br"); 

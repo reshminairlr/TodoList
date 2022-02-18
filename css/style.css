@@ -186,3 +186,13 @@ ul {
   height:280px;
   margin-top: 7%;
 }
+#id{
+  color:blue;
+  size: 15px;
+}
+#label{
+  size: 15px;
+}
+input[disabled] {
+  color: blue;
+  }

@@ -11,6 +11,8 @@ $(document).ready(function(){
         $('#admincheck').show();
         $('#admincheck').html("**username is not correct");
         $('#admincheck').css( "color", "red");
+        $('#passcheck').html("**password is not empty");
+        $('#passcheck').css(   "color", "red");
         
     }
    
@@ -18,17 +20,22 @@ $(document).ready(function(){
         $('#admincheck').show();
         $('#admincheck').css( "color", "green");
         $('#admincheck').html("valid");
-
+       $('#passcheck').html("**password is not empty");
+        $('#passcheck').css(   "color", "red");
 
     }
-    });
+    },password());
 
-    $("#password").on('input', function(){
-        var pass_word = $('#password').val();
+       function password(){
+           
+          $("#password").on('input', function(){
+            var pass_word = $('#password').val();
+
         // console.log("pass_word "+pass_word);
         if(pass_word!="12345")
         {
-    
+
+            var pass_word = $('#password').val();
             $('#passcheck').show();
             $('#passcheck').html("**password is not correct");
             $('#passcheck').css(   "color", "red");
@@ -40,9 +47,14 @@ $(document).ready(function(){
             $('#passcheck').css(   "color", "green");
 
         }
-    });
 
 
+    
+    }
+    
+    );
+        
+       }
     })
     
     
