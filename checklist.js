@@ -23,10 +23,11 @@ if(response[j].completed==true)
   var checkbox = document.createElement('input');
 checkbox.type = "checkbox";
 checkbox.name = "name";
-checkbox.value = "value";
+// checkbox.value = "value";
 checkbox.id = "id";
 checkbox.checked="true";
-var label = document.createElement('label')
+ checkbox.class="disabled";
+var label = document.createElement('label');
 label.htmlFor = "id";
 
 
@@ -49,9 +50,10 @@ else{
     var checkbox = document.createElement('input');
 checkbox.type = "checkbox";
 checkbox.name = "name";
-checkbox.value = "value";
+// checkbox.value = "value";
 checkbox.id = "id";
-checkbox.onclick="taskcompleted();"
+checkbox.checked="";
+// checkbox.onclick="taskcompleted(this);"
 var label = document.createElement('label')
 label.htmlFor = "id";
 
@@ -67,14 +69,31 @@ check_box.appendChild(checkbox);
 check_box.appendChild(label);
 check_box.appendChild(linebreak);
 count++;
+// function taskcompleted()
+// {
+//   var chkbox="", ts=0,tc=0,ttc=5;
 
+//     for(var i=0;i<5;i++)
+// {
+//    chkbox[i]=document.getElementById("#id");
+//   var text = document.getElementById("text");
+//   if (chkbox[i].checked == true){
+//     ts++;
+//     tc=tc-ts;
+//     ttc--;
+
+//     text.innerHTML("Total task selected:"+ts);
+//   } else {
+//      text.style.display = "none";
+//   }
+// }
+// }
 
 }
 
 
-
-
 }
+
 
 }
 }

@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
 
     
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body class="checkbckgnd" onload="retrievedata();taskcompleted();">
+<body class="checkbckgnd" onload="retrievedata();">
     <div class="topnav">
         <a class="active" href="#">TODOLIST</a>
         <a href="./login.html">LOGOUT</a>
@@ -22,22 +23,102 @@
     <div class="row ">
         <div class="col-sm-1"></div>
         <div class="col-sm-8" >
-    <table >
+    <!-- <table name="checkedlist" id="checkedlist" >
         <tr>
           
-            <td id="check_box" ></td>
+            <td id="check_box" onclick=" taskcompleted();" ></td>
            
 
         </tr>
 
 
 
-    </table>
+    </table> -->
+    <ul onclick=" taskcompleted();">
+<li id="check_box"  >
+
+
+</li>
+
+
+    </ul>
 </div>
-<div class="col-sm-4"></div>
+<div class="col-sm-2"id="leftbox" >
+    <p id="taskdtls"> Complete any five task!</p>
+</div>
 </div>
 </body>
 <script src="./checklist.js"></script>
 <script src="./checkedtask"></script>
+<script>
+
+
+
+
+
+       
+        function taskcompleted(){
+            let tc=0,td=0;
+            // for(var i=0;i<5;i++){
+
+        //   document.getElementById("taskdtls").textContent = "Total Number of Task Selected = " + document.querySelectorAll("input:checked").length;
+        // tc=console.log( document.querySelectorAll("#id:checked").length);
+if( document.querySelectorAll("#id:checked").length=="95")
+{
+        
+        console.log("tc as 5");
+        tc++;
+
+        showChecked(tc);
+        function showChecked(){
+          document.getElementById("taskdtls").textContent = "Congrats you  completed the 5 tasks! " ;
+        // console.log(document.querySelectorAll("input:checked").length);
+        }
+        document.querySelectorAll("input[name=name]").forEach(i=>{
+         i.onclick = function(){
+          showChecked();
+         }
+        });
+
+
+
+
+
+
+         
+
+    var p=new Promise(function(resolve,reject)
+    {
+       
+        if(tc!=0)
+        {
+            resolve("Congrats 5 Tasks have been successfully completed");
+        }
+        else{
+            reject("not selected");
+        }
+
+    
+
+    })
+    p.then(function(r)
+    { 
+        alert(r);
+    
+        // alert("checked 5");
+    })
+    .catch(function(err)
+    {
+        console.log(err);
+    })
+
+// }
+}
+}       
+// // })
+      
+   
+
+</script>
 
 </html>

@@ -176,3 +176,13 @@ input[type=text]:focus, input[type=password]:focus {
 h2{
     color: red;
 }
+ul {
+  list-style-type: none;
+}
+#leftbox {
+  float:left; 
+  color:Red;
+  width:25%;
+  height:280px;
+  margin-top: 7%;
+}
