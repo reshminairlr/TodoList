@@ -58,10 +58,11 @@ body, html {
 
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-image: url("../image/logo.jpg");
+  background-image: url("../image/img2.jpg");
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  /* margin-top: 25%; */
   /* background-size: cover; */
   background-color: white;
   /* color:black; */
