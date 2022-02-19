@@ -14,8 +14,8 @@ body, html {
   background-image: url("../image/backgnd.jpg");
   
   /* Add the blur effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
   
   /* Full height */
   height: 100%; 
